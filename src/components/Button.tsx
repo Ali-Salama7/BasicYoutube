@@ -6,7 +6,8 @@ const buttonStyles = cva(["transition-colors", "cursor-pointer"], {
     variants: {
         variant: {
             default: ["bg-gray-100", "hover:bg-gray-200", "hover:cursor-pointer"],
-            ghost: ["bg-transparent", "hover:bg-gray-200", "hover:cursor-pointer"]
+            ghost: ["bg-transparent", "hover:bg-gray-200", "hover:cursor-pointer"],
+            dark: ['bg-black', "hover:bg-gray-800", "text-white"]
         },
         size: {
             default: ["rounded", "p-2"],
