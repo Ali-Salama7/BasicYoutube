@@ -3,6 +3,7 @@ import logo from "../assets/youtube.png";
 import Button from "../components/Button";
 import { useState } from "react";
 import { useSidebarContext } from "../context/SidebarContext";
+import '../index.css'
 
 const PageHeader = () => {
   const [showFullWidth, setShowFullWidth] = useState(false);
@@ -43,7 +44,7 @@ const PageHeader = () => {
       <div
         className={`flex-shrink-0 md:gap-2 ${
           showFullWidth ? "hidden" : "flex"
-        }`}
+        } small`}
       >
         <Button
           onClick={() => setShowFullWidth(true)}

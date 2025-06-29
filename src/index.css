@@ -8,3 +8,23 @@ hr{
 *{
     scrollbar-width: none;
 }
+
+@media (max-width: 512px) {
+    div .small{
+        position: absolute;
+        bottom: 0;
+        z-index: 100;
+        background-color: white;
+        width: 96%;
+        height: 60px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .phone{
+        display: none;
+    }
+}

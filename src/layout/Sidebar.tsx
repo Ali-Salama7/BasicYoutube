@@ -127,7 +127,7 @@ const Sidebar = () => {
   const {isLargeOpen, isSmallOpen, close} = useSidebarContext()
   return (
     <>
-      <aside className={`sticky top-0 overflow-y-auto scrollbar-hidden pb-4 flex flex-col ml-1 ${isLargeOpen ? 'lg:hidden' : 'lg:flex'}`}>
+      <aside className={`sticky top-0 overflow-y-auto scrollbar-hidden pb-4 flex flex-col ml-1 ${isLargeOpen ? 'lg:hidden' : 'lg:flex'} phone`}>
         <SmallSidebarItem Icon={Home} title="Home" url="/" />
         <SmallSidebarItem Icon={Repeat} title="Shorts" url="/shorts" />
         <SmallSidebarItem
