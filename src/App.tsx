@@ -4,11 +4,13 @@ import { categories, videos } from "./data/home"
 import PageHeader from "./layout/PageHeader"
 import VideoGridItem from "./components/VideoGridItem"
 import Sidebar from "./layout/Sidebar"
+import { SidebarProvider } from "./context/SidebarContext"
 
 const App = () => {
   const [selectedCategory, setSelectedCategory] = useState(categories[0])
   return (
-    <div className="max-h-screen flex flex-col">
+    <SidebarProvider>    
+      <div className="max-h-screen flex flex-col">
       <PageHeader/>
       <div className="grid grid-cols-[auto_1fr] flex-grow-1 overflow-auto">
         <Sidebar/>
@@ -24,6 +26,7 @@ const App = () => {
         </div>
       </div>
     </div>
+    </SidebarProvider>
   )
 }
 
